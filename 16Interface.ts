@@ -2,7 +2,7 @@ export {}
 
 interface Student {
     firstName:string,
-    lastName?:string
+    lastName:string
 }
 
 // interface Student {
@@ -10,15 +10,15 @@ interface Student {
 //     lastName?:string
 // }
 
-const printFullname = (student:{firstName:string, lastName:string}) => {
-    console.log(student.firstName, student.lastName)
-}
+// const printFullname = (student:{firstName:string, lastName:string}) => {
+//     console.log(student.firstName, student.lastName)
+// }
 
 const printFullname2 = (student:Student) => {
     console.log(student.firstName, student.lastName)
 }
 
-let harry = {firstName:'harrry'}
+let harry = {firstName:'harrry', lastName:'jsdhf'}
 
 printFullname2(harry)
 
