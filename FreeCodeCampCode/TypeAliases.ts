@@ -3,9 +3,9 @@ export {}
 //type aliases are similar to interfaces
 
 type User = {
-    name:string
-    age:number
-    isActive:boolean
+    name:string;
+    age:number;
+    isActive:boolean;
 }
 
 const GetUser = (user:User):User =>{

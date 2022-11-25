@@ -7,7 +7,12 @@ const newData = arr.map((item):string =>{
 })
 
 
-//Good practice to put void even though not necessary
+//Good practice to put void even though not necessary - when function is returning nothing
 const consoleError = (errmsg:string):void => {
     console.log(errmsg)
+}
+
+// TypeScript introduced a new type never, which indicates the values that will never occur.
+const handleError = (errmsg:string):never => {
+    throw new Error(errmsg)    
 }
