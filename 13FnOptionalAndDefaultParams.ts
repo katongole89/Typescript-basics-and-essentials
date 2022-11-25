@@ -1,13 +1,17 @@
 export {}
 
-const add = (n1:number, n2?:number):number => {
-    if(n2){
-        return n1+n2
+const addBoolTest = (n1:number, n2?:boolean):number => {
+    if(n2 === void 0){
+        console.log('we here')
+        return 25
     }else{
         return n1
     }
 }
 
+addBoolTest(1)
+
+//setting the default 
 const add2 = (n1:number, n2:number = 20):number => {
     return n1+n2
 }
