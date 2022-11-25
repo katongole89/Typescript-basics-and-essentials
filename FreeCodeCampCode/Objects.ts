@@ -14,3 +14,6 @@ const createUser = (user:{name:string, email:string, isActive:boolean}):{name:st
 }
 
 createUser(User)
+
+//weird behaviour -- passing an extra field that is not in what is required
+//rewatch video
