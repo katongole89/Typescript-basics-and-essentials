@@ -13,3 +13,8 @@ type User = {
 let justArr: User[] = []
 
 justArr.push({name:'kat', age:20})
+
+//further down
+const MLmodels: number[][] = [
+    [1, 2, 3], [1, 2, 3]
+]
