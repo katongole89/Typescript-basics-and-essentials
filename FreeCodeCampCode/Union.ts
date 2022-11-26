@@ -14,6 +14,9 @@ type Admin ={
 
 let person: User|Admin
 
+
+//functions
+
 const getUser = (id:string|number) => {
     // id.toLowerCase() Wont allow
     if(typeof id === "string"){
@@ -23,3 +26,9 @@ const getUser = (id:string|number) => {
         // do number stuff
     }
 }
+
+//array
+// array can cotain either a number or string
+let testArr: (number|string)[] = ['ty', 1]
+// whole array can contain all numbers or all strings
+let testArr2: number[]|string[] = ['ty', '']
