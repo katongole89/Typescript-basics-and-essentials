@@ -32,3 +32,10 @@ const getUser = (id:string|number) => {
 let testArr: (number|string)[] = ['ty', 1]
 // whole array can contain all numbers or all strings
 let testArr2: number[]|string[] = ['ty', '']
+
+
+//use can specify the values u expect from a variable
+let seatAllotment: 'aisle'| 'middle' | 'window'
+
+seatAllotment = 'window'
+
