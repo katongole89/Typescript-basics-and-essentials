@@ -100,3 +100,42 @@ class Instagram implements TakePhoto{
         return 'gjsdhfk'
     }
 }
+
+
+// +++++++++++++++++++ Abstract classes ++++++++++++++++++++++++++++++++++
+// you cannot create an object from an abstract class -- its like a blue print
+abstract class TakePhotoCl{
+    constructor(
+        public camMode:string,
+        public filter:string        
+    ){}
+
+
+    //abstract methods
+    abstract getSepia():void //must be implemented though not implemented at te - no definition
+
+    getRealTime():number{
+        //some complex calculation
+        return 8
+    }
+}
+// const newPhotoCl = new TakePhotoCl('sds', 'sdf') //wont allow object
+
+class Imagery extends TakePhotoCl{
+    constructor(
+        public camMode:string,
+        public filter:string        
+    ){
+        super(camMode, filter)
+    }
+
+    printImages(){
+        console.log('images')
+    }
+
+    getSepia(): void {
+        console.log('dsjhkfj')
+    }
+}
+const newImage = new Imagery('sds', 'sdf') 
+// +++++++++++++++++++ End +++++++++++++++++++++++++++++++++++++++++++++++
