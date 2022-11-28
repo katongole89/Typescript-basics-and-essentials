@@ -8,7 +8,7 @@ export {}
 
 
 
-enum SeatChoice {
+const enum SeatChoice {
     AISLE,
     MIDDLE,
     WINDOW
@@ -17,20 +17,22 @@ enum SeatChoice {
 //Note by default first value is set to 0
 
 //set your own default 
-enum SeatChoice2 {
+const enum SeatChoice2 {
     AISLE = 20,
     MIDDLE =22,
     WINDOW
 }
 
 //set custom values
-enum SeatChoice3 {
+const enum SeatChoice3 {
     AISLE = 'aisle',
     MIDDLE = 'middle',
     WINDOW = 'window'
 }
 
-const hcSeat = SeatChoice.AISLE
+const hcSeat = SeatChoice3.AISLE
 console.log(hcSeat)
+
+//put const infront of the enums such that not alot of javascript codeis generated
 
 
