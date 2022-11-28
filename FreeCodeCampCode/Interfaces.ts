@@ -2,6 +2,7 @@ export {}
 
 //similar to types
 //u can define functions
+//interfaces can also be extended
 
 interface User{
     readonly _id:number,
@@ -13,11 +14,16 @@ interface User{
     getCoupon(couponname:string):number
 }
 
+interface User{
+    githubToken:string
+}
+
 
 const hitesh: User = {
     _id:11,
     name:'kat',
     email:'k@k.com',
     startTrial:()=> 'sfsfs',
-    getCoupon:(name:'htt')=> 10
+    getCoupon:(name:'hty'| 'yuu')=> 10,
+    githubToken: 'tywr'
 }
