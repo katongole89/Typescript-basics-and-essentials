@@ -1,0 +1,6 @@
+RUN THIS COMMAND: tsc --init 
+generates the tsconfig file
+RUN : npm init --y
+generates the package.json file
+RUN: tsc -w
+put project in watch mode
