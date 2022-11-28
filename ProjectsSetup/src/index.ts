@@ -72,3 +72,24 @@ class Admin extends User{
 // }
 
 const newAdmin = new Admin('kat@g.com', 'kat', false)
+console.log(newAdmin.isFamily)
+
+
+//IMPLEMENTS
+interface TakePhoto{
+    cameraMode: string,
+    filter: string,
+    burst: number
+}
+
+class Instagram implements TakePhoto{
+    constructor(
+        public cameraMode:string,
+        public filter:string,
+        public burst:number,
+        //it allows adding more
+        public checkFill:boolean
+
+
+    ){}
+}
