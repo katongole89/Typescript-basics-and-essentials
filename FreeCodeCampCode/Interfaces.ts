@@ -2,6 +2,7 @@ export {}
 
 //similar to types
 //u can define functions
+//interfaces can also be updated -== Reopeing of the interface
 //interfaces can also be extended
 
 interface User{
@@ -16,6 +17,12 @@ interface User{
 
 interface User{
     githubToken:string
+}
+
+
+// extending
+interface Admin extends User {
+
 }
 
 
