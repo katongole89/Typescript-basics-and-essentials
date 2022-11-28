@@ -82,6 +82,10 @@ interface TakePhoto{
     burst: number
 }
 
+interface Story{
+    createStory():string
+}
+
 class Instagram implements TakePhoto{
     constructor(
         public cameraMode:string,
@@ -89,7 +93,10 @@ class Instagram implements TakePhoto{
         public burst:number,
         //it allows adding more
         public checkFill:boolean
-
-
     ){}
+    //implement interface Story
+    // should have the same name as in interface
+    createStory():string{
+        return 'gjsdhfk'
+    }
 }
