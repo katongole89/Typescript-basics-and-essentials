@@ -56,7 +56,7 @@ function anotherFunc2 <T, U extends Database>(val1:T, val2:U ):object{
 }
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-
+//more research
 // ++++++++++++++++++++++ generic classes +++++++++++++++++++++++++++++++++++++++++
 interface Course{
     name: string,
@@ -70,8 +70,8 @@ class Sellable <T>{
     addToCart(products:T){
         this.cart.push(products)
     }
-
 }
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 
