@@ -54,5 +54,24 @@ interface Database{
 function anotherFunc2 <T, U extends Database>(val1:T, val2:U ):object{
     return {val1, val2}
 }
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+// ++++++++++++++++++++++ generic classes +++++++++++++++++++++++++++++++++++++++++
+interface Course{
+    name: string,
+    author: string,
+    subject:string
+}
+
+class Sellable <T>{
+    cart: T[] = []
+
+    addToCart(products:T){
+        this.cart.push(products)
+    }
+
+}
+
 
 
