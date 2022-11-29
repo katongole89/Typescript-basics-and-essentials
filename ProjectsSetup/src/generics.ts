@@ -13,11 +13,14 @@ const identityFour = <T>(val:T):T =>{
     return val
 }
 
+// ++++++++++++++++++++++  using generics with interfaces +++++++++++++++++++++++++++
 interface Bottle{
     brand:string,
     type:number
 }
 
-
-
+//do more research for using generics with interfaces
+// const identityFive = <Bottle>({})
+// identityFive<Bottle>({})
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
